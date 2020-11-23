@@ -12,7 +12,7 @@ const Bar = ({title, url, isLarge}) => {
 
     useEffect(() => {
         const fetchMovies = async () => {
-            fetch(url,{
+            await fetch(url,{
                 method: "GET"
             })
             .then(res => res.json())
@@ -20,8 +20,6 @@ const Bar = ({title, url, isLarge}) => {
         }
         fetchMovies();
     }, [])
-
-    console.table(movies)
 
     return (
         <>

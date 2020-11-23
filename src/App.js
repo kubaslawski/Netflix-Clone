@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import Bar from "./components/Bar";
+import Banner from './components/Banner';
 import {requests} from "./api/constants";
 
 function App() {
   return (
     <div className="App">
+      <Banner/>
       <Bar title="Top Rated" url={requests.topRated} isLarge={true}/>
       <Bar title="Netflix Originals" url={requests.netflixOriginals}/>
       <Bar title="Trending Now" url={requests.popular}/>
