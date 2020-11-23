@@ -1,4 +1,8 @@
 import {React, useEffect, useState} from 'react';
+import  '../css/Bar.css';
+
+
+
 const base_url = "https://image.tmdb.org/t/p/original";
 
 
@@ -24,11 +28,14 @@ const Bar = ({title, url}) => {
         <div className="bar">
             <h2>{title}</h2>  
 
-            <div className="bar__post">
+            <div className="barPost">
                 {movies.map(e => {
                     return (
                         <>
-                        <img src={`${base_url}${e.poster_path}`} alt={e.name}/>
+                        <img key={e.id}
+                        className="imagePost"
+                        src={`${base_url}${e.poster_path}`} 
+                        alt={e.name}/>
                         </>
                     )
                 })}
