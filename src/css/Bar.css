@@ -1,3 +1,7 @@
+.bar {
+    margin-left: 20px;
+}
+
 .barPost {
     display: flex;
     overflow-y: hidden;
@@ -21,3 +25,10 @@
     transform: scale(1.4);
 }
 
+.barPostLarge {
+    max-height: 250px;
+}
+
+.barPostLarge:hover {
+    transform: scale(1.5);
+}

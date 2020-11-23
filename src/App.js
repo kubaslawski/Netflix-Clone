@@ -6,6 +6,8 @@ import {requests} from "./api/constants";
 function App() {
   return (
     <div className="App">
+      <Bar title="Top Rated" url={requests.topRated} isLarge={true}/>
+      <Bar title="Netflix Originals" url={requests.netflixOriginals}/>
       <Bar title="Trending Now" url={requests.popular}/>
       <Bar title="For Kids" url={requests.forKids}/>
       <Bar title="Dramas" url={requests.dramas}/>

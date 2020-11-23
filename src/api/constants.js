@@ -2,6 +2,8 @@ export const API_KEY = '88da4655a67793b6e053e416754523b6';
 export const BASE_URL = "https://api.themoviedb.org/3"
 
 export const requests = {
+    topRated: `${BASE_URL}/movie/top_rated?api_key=${API_KEY}&language=en-US`,
+    netflixOriginals: `${BASE_URL}/discover/tv?api_key=${API_KEY}&with_networks=213`,
     popular: `${BASE_URL}/trending/all/week?api_key=${API_KEY}&language=en-US`,
     forKids: `${BASE_URL}/discover/movie?api_key=${API_KEY}&certification_country=US&certification.lte=G&sort_by=popularity.desc`,
     dramas: `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=18&`,

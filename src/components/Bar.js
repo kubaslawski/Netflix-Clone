@@ -6,7 +6,7 @@ import  '../css/Bar.css';
 const base_url = "https://image.tmdb.org/t/p/original";
 
 
-const Bar = ({title, url}) => {  
+const Bar = ({title, url, isLarge}) => {  
 
     const [movies, setMovies] = useState([]);
 
@@ -33,8 +33,8 @@ const Bar = ({title, url}) => {
                     return (
                         <>
                         <img key={e.id}
-                        className="imagePost"
-                        src={`${base_url}${e.poster_path}`} 
+                        className={`imagePost ${isLarge && "barPostLarge"}`}
+                        src={`${base_url}${isLarge ? e.poster_path : e.backdrop_path}`} 
                         alt={e.name}/>
                         </>
                     )
