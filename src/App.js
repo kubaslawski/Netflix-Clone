@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <Banner/>
-      <Bar title="Top Rated" url={requests.topRated} isLarge={true}/>
-      <Bar title="Netflix Originals" url={requests.netflixOriginals}/>
+      <Bar title="Netflix Originals" url={requests.netflixOriginals} isLarge={true}/>
+      <Bar title="Top Rated" url={requests.topRated}/>
       <Bar title="Trending Now" url={requests.popular}/>
       <Bar title="For Kids" url={requests.forKids}/>
       <Bar title="Dramas" url={requests.dramas}/>

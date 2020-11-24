@@ -1,5 +1,6 @@
 .bar {
     margin-left: 20px;
+    color: white;
 }
 
 .barPost {
@@ -22,7 +23,7 @@
 }
 
 .imagePost:hover {
-    transform: scale(1.4);
+    transform: scale(1.1);
 }
 
 .barPostLarge {
@@ -30,5 +31,5 @@
 }
 
 .barPostLarge:hover {
-    transform: scale(1.5);
+    transform: scale(1.12);
 }
