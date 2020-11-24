@@ -1,11 +1,13 @@
 import './App.css';
 import Bar from "./components/Bar";
 import Banner from './components/Banner';
+import Nav from './components/Nav';
 import {requests} from "./api/constants";
 
 function App() {
   return (
     <div className="App">
+      <Nav/>
       <Banner/>
       <Bar title="Netflix Originals" url={requests.netflixOriginals} isLarge={true}/>
       <Bar title="Top Rated" url={requests.topRated}/>
