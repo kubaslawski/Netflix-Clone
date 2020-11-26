@@ -12,9 +12,9 @@ const Nav = () => {
                 setShow(true)
             } else setShow(false);
         })
-        // return () => {
-        //     window.removeEventListener("scroll");
-        // };
+        return () => {
+            window.removeEventListener("scroll");
+        };
     }, [])
 
     return (
